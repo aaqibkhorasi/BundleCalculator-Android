@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8C12D" >
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/Header"
+        android:src="@drawable/header" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/calc" />
+
+    <Button
+        android:id="@+id/gpaCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calc"
+        android:layout_below="@+id/calc"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/gpa" />
+
+    <Button
+        android:id="@+id/tipCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gpaCalc"
+        android:layout_below="@+id/gpaCalc"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/tip" />
+
+    <Button
+        android:id="@+id/lengthCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipCalc"
+        android:layout_below="@+id/tipCalc"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/length" />
+
+    <Button
+        android:id="@+id/tempCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lengthCalc"
+        android:layout_below="@+id/lengthCalc"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/temp" />
+
+    <Button
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tempCalc"
+        android:layout_below="@+id/tempCalc"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/weight" />
+
+</RelativeLayout>

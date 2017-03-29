@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.thecalculator.MainActivity$PlaceholderFragment"
+    android:background="#959595" >
+
+    <EditText
+        android:id="@+id/etTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:inputType="numberDecimal"
+        android:maxLength="14"
+        android:text="@string/disp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etBill"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Enter Temperature:"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTemp"
+        android:layout_below="@+id/etTemp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:layout_weight="0.06"
+        android:entries="@array/strArray3"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvdispResult"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_weight="0.05"
+        android:entries="@array/strArray3"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/spinner2"
+        android:layout_weight="0.06"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp"
+        android:text="TO"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvdispResult"
+        android:layout_alignBottom="@+id/tvdispResult"
+        android:layout_alignLeft="@+id/spinner1"
+        android:text="Result:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvdispResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etTemp"
+        android:layout_below="@+id/btConvert"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinner2"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/tvResult"
+        android:background="@drawable/convert" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#959595">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:entries="@array/strArray2"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:text="TO"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:entries="@array/strArray1"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:paddingLeft="10dp"
+        android:text="Foot"
+        android:textSize="20sp"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/etFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvFirst"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etFirst"
+        android:paddingLeft="10dp"
+        android:text="Inch"
+        android:paddingTop="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvSecond"
+        android:text=""
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/btConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/convert" />
+
+</RelativeLayout>
